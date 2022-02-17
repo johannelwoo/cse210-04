@@ -11,7 +11,6 @@ class MovingObject:
 
     def advance(self):
         # Advance the moving object
-        # If it goes beyond the screen, wrap around to the other side.
         
         # x component
         self.center.x += self.velocity.dx
