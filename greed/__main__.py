@@ -1,5 +1,8 @@
-from game.director import Director
+from director import *
 
-# This main program executes the program by instantiating a Director and executing the play_game method.
-director = Director()
-director.play_game()
+def main():
+    director = Director()
+    director.start_game()
+    
+if __name__ == "__main__":
+    main()
