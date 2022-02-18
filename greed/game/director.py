@@ -5,7 +5,7 @@ from score import *
 class Director: 
     
     def __init__(self):
-        self._screen = Screen()
+        self._screen = video_service()
         # self.total_score = 0
         
     def start_game(self):
