@@ -3,11 +3,10 @@ from game.shared.point import Point
 
 
 class KeyboardService:
-    """Detects player input. 
-    
-    The responsibility of a KeyboardService is to detect player key presses and translate them into 
+    """
+    This will detect the input from the player to move. When the player presses a key it will be translated into
     a point representing a direction.
-
+    
     Attributes:
         cell_size (int): For scaling directional input to a grid.
     """
@@ -21,7 +20,7 @@ class KeyboardService:
         self._cell_size = cell_size
 
     def get_direction(self):
-        """Gets the selected direction based on the currently pressed keys.
+        """Gets the selected direction from the key pressed by the player.
 
         Returns:
             Point: The selected direction.
